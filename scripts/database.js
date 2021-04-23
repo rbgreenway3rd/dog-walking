@@ -62,7 +62,7 @@ const database = {
     pets: [{
         id: 1,
         name: "Dianemarie Hartness",
-        walkerId: 3
+        walkerId: 1
     }, {
         id: 2,
         name: "Christoph Fosdyke",
@@ -70,7 +70,7 @@ const database = {
     }, {
         id: 3,
         name: "Rocket",
-        walkerId: 7
+        walkerId: 4
     }, {
         id: 4,
         name: "Ebony",
@@ -90,7 +90,7 @@ const database = {
     }, {
         id: 8,
         name: "Sassy",
-        walkerId: 1
+        walkerId: 6
     }, {
         id: 9,
         name: "Salem",

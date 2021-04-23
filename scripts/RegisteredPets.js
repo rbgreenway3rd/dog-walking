@@ -5,15 +5,26 @@ document.addEventListener(
     (clickEvent) => {
         const itemClicked = clickEvent.target
         if (itemClicked.id.startsWith("pet")) {
-            const [, walkerId] = itemClicked.id.split("--")
+            const [, id] = itemClicked.id.split("--")
 
             for (const walker of walkers) {
-                if (walker.id === parseInt(walkerId)) {
+                if (walker.id === parseInt(id)) {
+                    let walkerPetName = ""
                     for (const pet of pets) {
-                        if (pet.walkerId === walker.id)
-                            window.alert(`${pet.name} is being walked by ${walker.name}`)
+                        if (pet.walkerId === walker.id) {
+                            walkerPetName = pet
+                        }
 
                     }
+                    
+                    // const walkerPetName = pets.filter(pet => {
+                        // if (pet.walkerId === walker.id) {
+                            // return true
+                        // }
+                        
+                    // }
+                    
+                    window.alert(`${walkerPetName.name} is being walked by ${walker.name}`)
 
                 }
             }
